@@ -1,0 +1,75 @@
+.intro {
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 100px;
+  background: url(../assets/deco.svg) no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro h1::before {
+    top: -20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h1::before {
+    width: 50px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro {
+    grid-template-columns: 1.7fr 0.6fr;
+    gap: 0.0000000002;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro h1::before {
+    width: 30px;
+    height: 8px;
+    left: 0px;
+  }
+
+  .container{
+    gap:30px;
+  }
+}

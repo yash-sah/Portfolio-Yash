@@ -1,0 +1,136 @@
+.experience .subtitles {
+  color: #e0e0e0;
+}
+
+.exp-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #525252;
+}
+
+.exp-text strong {
+  color: #141414;
+}
+
+.emp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.emp::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: -4px;
+  background: linear-gradient(180deg, #ff67c3 0%, #ce1986 100%, #c1127b 100%);
+}
+
+.emp:nth-child(3)::before {
+  background: linear-gradient(180deg, #ffef66 0%, #dbc71a 100%);
+}
+
+.emp:nth-child(4)::before {
+  background: linear-gradient(180deg, #66c2fe 0%, #1584cd 100%);
+}
+
+.dates1 {
+  position: absolute;
+  top: 20px;
+  left: -140px;
+  color: #525252;
+  font-size: 0.875rem;
+  text-align: right;
+  width: 120px;
+}
+
+.titlesname {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.emp-cargo {
+  color: #525252;
+  line-height: 1.4;
+  font-size: 0.875rem;
+
+  min-width: 100%;
+  margin-bottom: 0.2rem;
+}
+
+.cargo-infos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.descriptionsname {
+  color: #525252;
+  line-height: 1.4;
+  font-size: 0.875rem;
+}
+
+.descriptionsname a {
+  color: #525252;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.descriptionsname a:hover {
+  color: #141414;
+}
+
+.list-of-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.list-of-list li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 400px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .experience .subtitles {
+    color: #141414;
+  }
+
+  .exp-text {
+    font-size: 1.0rem;
+  }
+
+  .dates1 {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+/*
+@media (max-width: 400px) {
+  .emp {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
